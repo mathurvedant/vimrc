@@ -1,0 +1,12 @@
+[submodule "my_plugins/vim-airline"]
+	path = my_plugins/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "my_plugins/vim-airline-themes"]
+	path = my_plugins/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "my_plugins/taglist.vim"]
+	path = my_plugins/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "my_plugins/YouCompleteMe"]
+	path = my_plugins/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
