@@ -7,6 +7,3 @@
 [submodule "my_plugins/taglist.vim"]
 	path = my_plugins/taglist.vim
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule "my_plugins/YouCompleteMe"]
-	path = my_plugins/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
