@@ -137,3 +137,25 @@ autocmd BufWinLeave * call clearmatches()
  highlight DiffText   term=reverse,bold  ctermbg=darkblue    ctermfg=white   cterm=bold  guibg=DarkRed    guifg=yellow   gui=bold
  highlight DiffChange term=bold          ctermbg=cyan        ctermfg=white   cterm=bold  guibg=Black      guifg=White    gui=bold
  highlight DiffDelete term=none          ctermbg=red         ctermfg=white   cterm=none  guibg=DarkBlue   guifg=DarkBlue gui=none
+
+" CPP Files Indentation.
+function! CppTab()
+ let b:tabtype = "cpp"
+ set tabstop=8
+ set shiftwidth=4
+ set expandtab
+endfunction
+
+augroup CppTabGroup
+ au!
+ autocmd BufRead,BufNewFile *.\(cpp\|cc\|hpp\|hh\|ut\)  call CppTab()
+augroup end
+
+" Highlight .ut files as CPP.
+autocmd BufNewFile,BufReadPost *.ut set filetype=cpp
+
+" Set C syntax highlighting
+nnoremap <silent> ,cf :set syntax=c<CR>:set cindent<CR
+
+" Set C++ syntax highlighting
+nnoremap <silent> ,cpp :set syntax=cpp<CR>
